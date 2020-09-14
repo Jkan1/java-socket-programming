@@ -3,6 +3,8 @@
  *
  * @author kan
  */
+package MultiServerClient;
+
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -26,6 +28,5 @@ public class MultithreadedServer {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

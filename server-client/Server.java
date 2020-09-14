@@ -3,6 +3,8 @@
  *
  * @author kan
  */
+package ServerClient;
+
 import java.io.*;
 import java.net.*;
 
@@ -29,6 +31,8 @@ public class Server {
                     break;
                 }
             }
+            
+            socket.close();
 
         } catch (IOException e) {
             e.printStackTrace();

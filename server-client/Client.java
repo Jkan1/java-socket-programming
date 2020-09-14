@@ -3,6 +3,8 @@
  *
  * @author kan
  */
+package ServerClient;
+
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -32,6 +34,9 @@ public class Client {
                 System.out.println(response);
 
             } while (!msg.equals("exit"));
+            
+            userInput.close();
+            client.close();
 
         } catch (Exception e) {
             e.printStackTrace();

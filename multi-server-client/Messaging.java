@@ -3,6 +3,8 @@
  *
  * @author kan
  */
+package MultiServerClient;
+
 import java.net.*;
 import java.io.*;
 
@@ -29,6 +31,9 @@ public class Messaging extends Thread {
                     break;
                 }
             }
+
+            this.clientSocket.close();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
